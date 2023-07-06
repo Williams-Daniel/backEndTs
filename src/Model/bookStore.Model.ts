@@ -4,7 +4,7 @@ export interface eBookStore{
     title:string,
     author:string,
     category:string,
-    cost:number
+    cost:string
 }
 
   interface ibook extends eBookStore, mongoose.Document {}
@@ -20,7 +20,7 @@ export interface eBookStore{
         type:String
     },
     cost:{
-        type:Number
+        type:String
     }
   },{timestamps:true})
 
