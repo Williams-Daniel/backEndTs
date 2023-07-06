@@ -1,8 +1,9 @@
 import express, { Application } from "express"
 import appConfig from "./app"
 import dbConfig from "./Config/DataBase"
+import envVariables from "./Config/envVariable"
 
-const PORT:number = 4544
+const PORT = envVariables.PORT
 
 const app:Application = express()
 
